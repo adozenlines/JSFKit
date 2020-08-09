@@ -50,6 +50,11 @@ public struct JSReader: JSReaderProtocol {
                     completion(nil, JSReaderError.serverError)
                 return
             }
+            guard let mimeType = response.mimeType, mimeType.contains(JSMimeTypes.appFeedJson.value) ||
+                mimeType.contains(JSMimeTypes.appJson.value) else {
+                    completion(nil, JSReaderError.dataFormat)
+                return
+            }
             if error != nil {
                 completion(nil, error)
             } else {

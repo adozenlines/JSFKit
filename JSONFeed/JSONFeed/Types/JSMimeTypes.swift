@@ -1,5 +1,5 @@
 //
-//  JSReaderError.swift
+//  JSMimeTypes.swift
 //  JSONFeed
 //
 //  MIT License
@@ -26,9 +26,11 @@
 
 import Foundation
 
-public enum JSReaderError: Error {
-    case invalidRequestString
-    case emptyResponseData
-    case serverError
-    case dataFormat
+public enum JSMimeTypes: String {
+    
+    case appJson = "application/json", appFeedJson = "application/feed+json"
+    
+    var value: String {
+        return rawValue
+    }
 }

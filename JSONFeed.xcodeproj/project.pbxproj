@@ -28,6 +28,7 @@
 		FFB881C624DF544E002AFCA2 /* stream.json in Resources */ = {isa = PBXBuildFile; fileRef = FFB881C524DF544E002AFCA2 /* stream.json */; };
 		FFB881C824DF55E1002AFCA2 /* JSFeed+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB881C724DF55E1002AFCA2 /* JSFeed+Data.swift */; };
 		FFFDB41424E048F30011D165 /* JSCodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFDB41324E048F30011D165 /* JSCodableHelper.swift */; };
+		FFFDB41824E09DBA0011D165 /* JSMimeTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFDB41724E09DBA0011D165 /* JSMimeTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		FFB881C924E03F3F002AFCA2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FFB881CA24E03F3F002AFCA2 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		FFFDB41324E048F30011D165 /* JSCodableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSCodableHelper.swift; sourceTree = "<group>"; };
+		FFFDB41724E09DBA0011D165 /* JSMimeTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSMimeTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				FFB881B824DF4230002AFCA2 /* JSError.swift */,
+				FFFDB41724E09DBA0011D165 /* JSMimeTypes.swift */,
 				FFB881C224DF4E16002AFCA2 /* JSReaderError.swift */,
 			);
 			path = Types;
@@ -357,6 +360,7 @@
 				FFB881B324DF41AD002AFCA2 /* JSItem.swift in Sources */,
 				FFB881C824DF55E1002AFCA2 /* JSFeed+Data.swift in Sources */,
 				FFB881C324DF4E16002AFCA2 /* JSReaderError.swift in Sources */,
+				FFFDB41824E09DBA0011D165 /* JSMimeTypes.swift in Sources */,
 				FFB8817C24DF40F6002AFCA2 /* SceneDelegate.swift in Sources */,
 				FFB881B624DF41FC002AFCA2 /* JSFeed.swift in Sources */,
 				FFB881AF24DF417F002AFCA2 /* JSHub.swift in Sources */,
