@@ -14,7 +14,13 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '3.0'
   s.tvos.deployment_target = '9.0'
   s.ios.frameworks = 'UIKit', 'Foundation'
-  s.source_files          = 'JSONFeed/JSONFeed/*.swift'
-
+  s.default_subspec = "Core"
   s.swift_version = '5.0'
+  s.cocoapods_version = '>= 1.4.0'  
+
+  s.subspec "Core" do |ss|
+    ss.source_files  = "JSONFeed/JSONFeed"
+    ss.framework  = "Foundation"
+  end
+
 end
