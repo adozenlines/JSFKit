@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "JSONFeed"
-  s.version          = "1.0.1"
+  s.version          = "1.0.2"
   s.summary          = "JSONFeed is a JSON implementation of the RSS data reader"
   s.homepage         = "https://github.com/adozenlines/JSONFeed"
   s.license          = 'MIT'
