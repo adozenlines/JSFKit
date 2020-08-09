@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.cocoapods_version = '>= 1.4.0'  
 
   s.subspec "Core" do |ss|
-    ss.source_files  = "JSONFeed/JSONFeed"
+    ss.source_files  = "JSONFeed/JSONFeed", "JSONFeed/JSONFeed/Extensions", "JSONFeed/JSONFeed/IO", "JSONFeed/JSONFeed/Models", "JSONFeed/JSONFeed/Types"
     ss.framework  = "Foundation"
   end
 
