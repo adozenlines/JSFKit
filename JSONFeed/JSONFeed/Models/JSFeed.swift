@@ -37,7 +37,7 @@ public struct JSFeed: Decodable {
     public let icon: URL?
     public let favicon: URL?
     public let author: JSAuthor?
-    public let hasExpired: Bool
+    public let hasExpired: Bool?
     public let hubs: [JSHub]?
     public let items: [JSItem]
     

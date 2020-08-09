@@ -28,33 +28,29 @@ import Foundation
 
 protocol JSReaderProtocol {
     var session: URLSession { get }
-    var url: URL { get }
+    var url: URL? { get }
     func read(completion: @escaping (JSFeed?, Error?) -> Void)
 }
 
 
 public struct JSReader: JSReaderProtocol {
     let session: URLSession
-    let url: URL
+    let url: URL?
     
-    init(url: URL, session: URLSession = URLSession(configuration: URLSessionConfiguration.default)) {
+    init(url: URL?, session: URLSession = URLSession(configuration: URLSessionConfiguration.default)) {
         self.url = url
         self.session = session
     }
     
     func read(completion: @escaping (JSFeed?, Error?) -> Void) {
+        guard let url = url else { completion(nil, JSError.invalidURL); return }
         let operation = session.dataTask(with: url) { (data, response, error) in
             if error != nil {
                 completion(nil, error)
             } else {
                 guard let data = data else { completion(nil, JSReaderError.emptyResponseData); return }
-                let decoder = JSONDecoder()
-                do {
-                    let model = try decoder.decode(JSFeed.self, from: data)
-                    completion(model, nil)
-                } catch {
-                    completion(nil, error)
-                }
+                let model = JSCodableHelper.decode(JSFeed.self, from: data)
+                completion(model.decodableObj, model.error)
             }
         }
         operation.resume()

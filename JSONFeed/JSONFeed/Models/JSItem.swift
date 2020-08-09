@@ -40,7 +40,7 @@ public struct JSItem: Decodable {
     public let modified: Date?
     public let author: JSAuthor?
     public let tags: [String]?
-    public let attachments: [JSAttachment]
+    public let attachments: [JSAttachment]?
     
     enum CodingKeys: String, CodingKey {
         case id
