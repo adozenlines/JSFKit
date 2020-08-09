@@ -31,7 +31,6 @@ import PackageDescription
 
 let package = Package(
     name: "JSONFeed",
-    platforms: [.iOS(.v9)],
     products: [
         .library(name: "JSONFeed", targets: ["JSONFeed"])
     ],
@@ -39,7 +38,7 @@ let package = Package(
         .target(
             name: "JSONFeed",
             dependencies: [],
-            path: "JSONFeed"
+            path: "JSONFeed/JSONFeed/JSONFeed"
         )
     ]
 )
