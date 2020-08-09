@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "JSONFeed"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "JSONFeed is a JSON implementation of the RSS data reader"
   s.homepage         = "https://github.com/adozenlines/JSONFeed"
   s.license          = 'MIT'
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc          = true
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '10.0'
   s.osx.deployment_target = '10.9'
   s.watchos.deployment_target = '3.0'
   s.tvos.deployment_target = '9.0'
