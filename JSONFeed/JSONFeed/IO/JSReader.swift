@@ -45,6 +45,11 @@ public struct JSReader: JSReaderProtocol {
     func read(completion: @escaping (JSFeed?, Error?) -> Void) {
         guard let url = url else { completion(nil, JSError.invalidURL); return }
         let operation = session.dataTask(with: url) { (data, response, error) in
+            guard let response = response as? HTTPURLResponse,
+                (200..<400).contains(response.statusCode) else {
+                    completion(nil, JSReaderError.serverError)
+                return
+            }
             if error != nil {
                 completion(nil, error)
             } else {

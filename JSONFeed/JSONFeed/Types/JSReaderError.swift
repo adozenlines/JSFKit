@@ -29,4 +29,5 @@ import Foundation
 public enum JSReaderError: Error {
     case invalidRequestString
     case emptyResponseData
+    case serverError
 }
