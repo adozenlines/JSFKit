@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name             = "JSONFeed"
+  s.name             = "JSFKit"
   s.version          = "1.0.4"
-  s.summary          = "JSONFeed is a JSON implementation of the RSS data reader"
+  s.summary          = "JSFKit is a JSON implementation of the RSS data reader"
   s.homepage         = "https://github.com/adozenlines/JSONFeed"
   s.license          = 'MIT'
   s.author           = { "Sean Batson" => "seanbatson@msn.com" }
