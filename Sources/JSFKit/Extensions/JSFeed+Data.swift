@@ -27,7 +27,7 @@
 import Foundation
 
 extension Data {
-    init?(file path: String, bundle: Bundle = .main) {
+    public init?(file path: String, bundle: Bundle = .main) {
         let parts = path.split(separator: ".") as [String.SubSequence]
 
         if parts.count != 2 {

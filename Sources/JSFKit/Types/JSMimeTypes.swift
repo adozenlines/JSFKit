@@ -30,7 +30,7 @@ public enum JSMimeTypes: String {
     
     case appJson = "application/json", appFeedJson = "application/feed+json"
     
-    var value: String {
+    public var value: String {
         return rawValue
     }
 }
