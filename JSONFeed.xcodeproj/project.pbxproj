@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,7 +29,6 @@
 		FFB881C824DF55E1002AFCA2 /* JSFeed+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB881C724DF55E1002AFCA2 /* JSFeed+Data.swift */; };
 		FFFDB41424E048F30011D165 /* JSCodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFDB41324E048F30011D165 /* JSCodableHelper.swift */; };
 		FFFDB41824E09DBA0011D165 /* JSMimeTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFDB41724E09DBA0011D165 /* JSMimeTypes.swift */; };
-		FFFDB42624E0D1540011D165 /* JSONFeed in Frameworks */ = {isa = PBXBuildFile; productRef = FFFDB42524E0D1540011D165 /* JSONFeed */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +80,6 @@
 		FFFDB41324E048F30011D165 /* JSCodableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSCodableHelper.swift; sourceTree = "<group>"; };
 		FFFDB41724E09DBA0011D165 /* JSMimeTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSMimeTypes.swift; sourceTree = "<group>"; };
 		FFFDB41924E0A5890011D165 /* JSONFeed.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = JSONFeed.podspec; sourceTree = "<group>"; };
-		FFFDB41D24E0AAE60011D165 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +87,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFFDB42624E0D1540011D165 /* JSONFeed in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,9 +112,8 @@
 			children = (
 				FFB881CA24E03F3F002AFCA2 /* LICENSE */,
 				FFFDB41924E0A5890011D165 /* JSONFeed.podspec */,
-				FFFDB41D24E0AAE60011D165 /* Package.swift */,
 				FFB881C924E03F3F002AFCA2 /* README.md */,
-				FFB8817824DF40F6002AFCA2 /* Sources */,
+				FFB8817824DF40F6002AFCA2 /* JSONFeed */,
 				FFB8818F24DF40F7002AFCA2 /* JSONFeedTests */,
 				FFB8819A24DF40F7002AFCA2 /* JSONFeedUITests */,
 				FFB8817724DF40F6002AFCA2 /* Products */,
@@ -134,7 +130,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FFB8817824DF40F6002AFCA2 /* Sources */ = {
+		FFB8817824DF40F6002AFCA2 /* JSONFeed */ = {
 			isa = PBXGroup;
 			children = (
 				FFB881A924DF410B002AFCA2 /* JSONFeed */,
@@ -146,7 +142,7 @@
 				FFB8818424DF40F7002AFCA2 /* LaunchScreen.storyboard */,
 				FFB8818724DF40F7002AFCA2 /* Info.plist */,
 			);
-			path = Sources;
+			path = JSONFeed;
 			sourceTree = "<group>";
 		};
 		FFB8818F24DF40F7002AFCA2 /* JSONFeedTests */ = {
@@ -245,7 +241,6 @@
 			);
 			name = JSONFeed;
 			packageProductDependencies = (
-				FFFDB42524E0D1540011D165 /* JSONFeed */,
 			);
 			productName = JSONFeed;
 			productReference = FFB8817624DF40F6002AFCA2 /* JSONFeed.app */;
@@ -320,7 +315,6 @@
 			);
 			mainGroup = FFB8816D24DF40F6002AFCA2;
 			packageReferences = (
-				FFFDB42424E0D1540011D165 /* XCRemoteSwiftPackageReference "JSONFeed" */,
 			);
 			productRefGroup = FFB8817724DF40F6002AFCA2 /* Products */;
 			projectDirPath = "";
@@ -710,25 +704,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		FFFDB42424E0D1540011D165 /* XCRemoteSwiftPackageReference "JSONFeed" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/adozenlines/JSONFeed.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		FFFDB42524E0D1540011D165 /* JSONFeed */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FFFDB42424E0D1540011D165 /* XCRemoteSwiftPackageReference "JSONFeed" */;
-			productName = JSONFeed;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FFB8816E24DF40F6002AFCA2 /* Project object */;
 }
