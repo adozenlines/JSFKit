@@ -26,6 +26,7 @@
 import Foundation
 
 extension Date {
+    @available(OSX 10.12, iOS 10.0, *)
     var iso8601: Date? {
          return ISO8601DateFormatter().date(from: String(describing: self))
     }
