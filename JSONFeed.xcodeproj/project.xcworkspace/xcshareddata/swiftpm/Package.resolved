@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "JSONFeed",
+        "repositoryURL": "https://github.com/adozenlines/JSONFeed.git",
+        "state": {
+          "branch": "master",
+          "revision": "c6036bd6ac9198d5000a7eb16be362f7bc9e3383",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
