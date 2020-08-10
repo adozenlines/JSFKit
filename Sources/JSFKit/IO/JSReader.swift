@@ -33,16 +33,16 @@ protocol JSReaderProtocol {
 }
 
 
-public struct JSReader: JSReaderProtocol {
+open struct JSReader: JSReaderProtocol {
     let session: URLSession
     let url: URL?
     
-    init(url: URL?, session: URLSession = URLSession(configuration: URLSessionConfiguration.default)) {
+    open init(url: URL?, session: URLSession = URLSession(configuration: URLSessionConfiguration.default)) {
         self.url = url
         self.session = session
     }
     
-    func read(completion: @escaping (JSFeed?, Error?) -> Void) {
+    open func read(completion: @escaping (JSFeed?, Error?) -> Void) {
         guard let url = url else { completion(nil, JSError.invalidURL); return }
         let operation = session.dataTask(with: url) { (data, response, error) in
             guard let response = response as? HTTPURLResponse,

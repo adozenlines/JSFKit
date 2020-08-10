@@ -32,11 +32,11 @@ enum JSDateError: String, Error {
     case invalidDate
 }
 
-open class JSCodableHelper {
+public class JSCodableHelper {
 
     public static var dateformatter: DateFormatter?
 
-    open class func decode<T>(_ type: T.Type, from data: Data) -> (decodableObj: T?, error: Error?) where T : Decodable {
+    public class func decode<T>(_ type: T.Type, from data: Data) -> (decodableObj: T?, error: Error?) where T : Decodable {
         var returnedDecodable: T? = nil
         var returnedError: Error? = nil
 
