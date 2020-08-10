@@ -80,7 +80,6 @@
 		FFFDB41324E048F30011D165 /* JSCodableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSCodableHelper.swift; sourceTree = "<group>"; };
 		FFFDB41724E09DBA0011D165 /* JSMimeTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSMimeTypes.swift; sourceTree = "<group>"; };
 		FFFDB41924E0A5890011D165 /* JSONFeed.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = JSONFeed.podspec; sourceTree = "<group>"; };
-		FFFDB41D24E0AAE60011D165 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +112,6 @@
 			children = (
 				FFB881CA24E03F3F002AFCA2 /* LICENSE */,
 				FFFDB41924E0A5890011D165 /* JSONFeed.podspec */,
-				FFFDB41D24E0AAE60011D165 /* Package.swift */,
 				FFB881C924E03F3F002AFCA2 /* README.md */,
 				FFB8817824DF40F6002AFCA2 /* JSONFeed */,
 				FFB8818F24DF40F7002AFCA2 /* JSONFeedTests */,
@@ -242,6 +240,8 @@
 			dependencies = (
 			);
 			name = JSONFeed;
+			packageProductDependencies = (
+			);
 			productName = JSONFeed;
 			productReference = FFB8817624DF40F6002AFCA2 /* JSONFeed.app */;
 			productType = "com.apple.product-type.application";
@@ -314,6 +314,8 @@
 				Base,
 			);
 			mainGroup = FFB8816D24DF40F6002AFCA2;
+			packageReferences = (
+			);
 			productRefGroup = FFB8817724DF40F6002AFCA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
