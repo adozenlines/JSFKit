@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "JSONFeed"
-  s.version          = "1.0.2"
+  s.version          = "1.0.3"
   s.summary          = "JSONFeed is a JSON implementation of the RSS data reader"
   s.homepage         = "https://github.com/adozenlines/JSONFeed"
   s.license          = 'MIT'
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.cocoapods_version = '>= 1.4.0'  
 
   s.subspec "Core" do |ss|
-    ss.source_files  = "JSONFeed/JSONFeed", "JSONFeed/JSONFeed/Extensions", "JSONFeed/JSONFeed/IO", "JSONFeed/JSONFeed/Models", "JSONFeed/JSONFeed/Types"
+    ss.source_files  = "Sources/JSONFeed", "Sources/JSONFeed/Extensions", "Sources/JSONFeed/IO", "Sources/JSONFeed/Models", "Sources/JSONFeed/Types"
     ss.framework  = "Foundation"
   end
 
