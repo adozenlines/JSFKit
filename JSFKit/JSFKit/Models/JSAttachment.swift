@@ -1,6 +1,6 @@
 //
-//  JSAuthor.swift
-//  JSONFeed
+//  JSAttachment.swift
+//  JSFKit
 //
 //  MIT License
 //
@@ -26,8 +26,35 @@
 
 import Foundation
 
-public struct JSAuthor: Decodable {
-    public let name: String?
-    public let url: URL?
-    public let avatar: URL?
+public struct JSAttachment: Decodable {
+    public let url: URL
+    public let mimeType: String
+    public let title: String?
+    public let bytes: Int?
+    public let seconds: Int?
+    
+    enum CodingKeys: String, CodingKey {
+        case url = "url"
+        case mimeType = "mime_type"
+        case title = "title"
+        case bytes = "size_in_bytes"
+        case seconds = "duration_in_seconds"
+    }
+}
+
+extension JSAttachment {
+    public init(from decoder: Decoder) throws {
+        do {
+            let values = try decoder.container(keyedBy: CodingKeys.self)
+            
+            url = try values.decode(URL.self, forKey: .url)
+            mimeType = try values.decode(String.self, forKey: .mimeType)
+            title = try values.decode(String.self, forKey: .title)
+            bytes = try values.decode(Int.self, forKey: .bytes)
+            seconds = try values.decode(Int.self, forKey: .seconds)
+            
+        } catch {
+            throw error
+        }
+    }
 }

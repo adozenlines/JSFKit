@@ -1,6 +1,6 @@
-# JSONFeed
+# JSFKit
 
-Swift JSONFeed - An imporved JSON implementation for RSS data  
+JSFKit- A swift JSON parser implementation for RSS data  
 
 Example usage:
 ```

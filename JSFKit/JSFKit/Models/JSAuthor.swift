@@ -1,6 +1,6 @@
 //
-//  JSFeed.swift
-//  JSONFeed
+//  JSAuthor.swift
+//  JSFKit
 //
 //  MIT License
 //
@@ -26,34 +26,8 @@
 
 import Foundation
 
-public struct JSFeed: Decodable {
-    public let version: URL
-    public let title: String
-    public let homePage: URL?
-    public let feed: URL?
-    public let description: String?
-    public let userComment: String?
-    public let next: URL?
-    public let icon: URL?
-    public let favicon: URL?
-    public let author: JSAuthor?
-    public let hasExpired: Bool?
-    public let hubs: [JSHub]?
-    public let items: [JSItem]
-    
-    enum CodingKeys: String, CodingKey {
-        case version
-        case title
-        case homePage = "home_page_url"
-        case feed = "feed_url"
-        case description
-        case userComment = "user_comment"
-        case next = "next_url"
-        case icon
-        case favicon
-        case author
-        case hasExpired = "expired"
-        case hubs
-        case items
-    }
+public struct JSAuthor: Decodable {
+    public let name: String?
+    public let url: URL?
+    public let avatar: URL?
 }

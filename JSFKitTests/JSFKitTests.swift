@@ -1,6 +1,6 @@
 //
-//  JSONFeedTests.swift
-//  JSONFeedTests
+//  JSFKitTests.swift
+//  JSFKitTests
 //
 //  Created by Sean Batson on 2020-08-08.
 //  Copyright © 2020 Sean Batson. All rights reserved.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import JSONFeed
 
-class JSONFeedTests: XCTestCase {
+class JSFKitTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -1,6 +1,6 @@
 //
-//  JSFeed+URL.swift
-//  JSONFeed
+//  JSMimeTypes.swift
+//  JSFKit
 //
 //  MIT License
 //
@@ -26,12 +26,11 @@
 
 import Foundation
 
-extension URL {
-    init?(string: String?) {
-        guard let string = string else {
-            return nil
-        }
-        self.init(string: string)
+public enum JSMimeTypes: String {
+    
+    case appJson = "application/json", appFeedJson = "application/feed+json"
+    
+    var value: String {
+        return rawValue
     }
 }
-

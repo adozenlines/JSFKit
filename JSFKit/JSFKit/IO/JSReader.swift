@@ -1,6 +1,6 @@
 //
 //  JSReader.swift
-//  JSONFeed
+//  JSFKit
 //
 //  MIT License
 //

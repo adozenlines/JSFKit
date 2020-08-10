@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = "JSFKit"
-  s.version          = "1.0.5"
-  s.summary          = "JSFKit is a JSON implementation of the RSS data reader"
-  s.homepage         = "https://github.com/adozenlines/JSONFeed"
+  s.version          = "1.0.6"
+  s.summary          = "JSFKit is a swift JSON parser implementation of the RSS data reader"
+  s.homepage         = "https://github.com/adozenlines/JSFKit"
   s.license          = 'MIT'
   s.author           = { "Sean Batson" => "seanbatson@msn.com" }
-  s.source           = { :git => "https://github.com/adozenlines/JSONFeed.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/adozenlines/JSFKit.git", :tag => s.version.to_s }
 
   s.requires_arc          = true
 
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.cocoapods_version = '>= 1.4.0'  
 
   s.subspec "Core" do |ss|
-    ss.source_files  = "JSONFeed/JSONFeed", "JSONFeed/JSONFeed/Extensions", "JSONFeed/JSONFeed/IO", "JSONFeed/JSONFeed/Models", "JSONFeed/JSONFeed/Types"
+    ss.source_files  = "JSFKit/JSFKit", "JSFKit/JSFKit/Extensions", "JSFKit/JSFKit/IO", "JSFKit/JSFKit/Models", "JSFKit/JSFKit/Types"
     ss.framework  = "Foundation"
   end
 

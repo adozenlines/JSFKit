@@ -1,6 +1,6 @@
 //
-//  JSMimeTypes.swift
-//  JSONFeed
+//  JSHub.swift
+//  JSFKit
 //
 //  MIT License
 //
@@ -26,11 +26,7 @@
 
 import Foundation
 
-public enum JSMimeTypes: String {
-    
-    case appJson = "application/json", appFeedJson = "application/feed+json"
-    
-    var value: String {
-        return rawValue
-    }
+public struct JSHub: Decodable {
+    public let type: String?
+    public let url: URL?
 }

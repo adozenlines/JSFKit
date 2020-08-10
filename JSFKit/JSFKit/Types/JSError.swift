@@ -1,6 +1,7 @@
 //
-//  JSFeed+Date.swift
-//  JSONFeed
+//  JSError.swift
+//  JSFKit
+//
 //  MIT License
 //
 //  Copyright (c) 2020 Sean Batson
@@ -25,8 +26,13 @@
 
 import Foundation
 
-extension Date {
-    var iso8601: Date? {
-         return ISO8601DateFormatter().date(from: String(describing: self))
-    }
+public enum JSError: Error {
+    case notAJSONFeed
+    case invalidVersion
+    case invalidTitle
+    case invalidID
+    case invalidURL
+    case invalidMimeType
+    case invalidData
+    case invalidString
 }

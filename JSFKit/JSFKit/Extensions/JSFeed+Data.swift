@@ -1,6 +1,6 @@
 //
-//  JSError.swift
-//  JSONFeed
+//  JSFeed+Data.swift
+//  JSFKit
 //
 //  MIT License
 //
@@ -26,13 +26,18 @@
 
 import Foundation
 
-public enum JSError: Error {
-    case notAJSONFeed
-    case invalidVersion
-    case invalidTitle
-    case invalidID
-    case invalidURL
-    case invalidMimeType
-    case invalidData
-    case invalidString
+extension Data {
+    init?(file path: String, bundle: Bundle = .main) {
+        let parts = path.split(separator: ".") as [String.SubSequence]
+
+        if parts.count != 2 {
+            return nil
+        }
+        
+        let filename = parts[0].base
+        let ext = parts[1].base
+        guard let object = bundle.url(forResource: filename, withExtension: ext) else { return nil }
+
+        try? self.init(contentsOf: object)
+    }
 }

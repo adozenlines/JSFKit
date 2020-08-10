@@ -1,7 +1,6 @@
 //
-//  JSFeed+Data.swift
-//  JSONFeed
-//
+//  JSFeed+Date.swift
+//  JSFKit
 //  MIT License
 //
 //  Copyright (c) 2020 Sean Batson
@@ -26,18 +25,8 @@
 
 import Foundation
 
-extension Data {
-    init?(file path: String, bundle: Bundle = .main) {
-        let parts = path.split(separator: ".") as [String.SubSequence]
-
-        if parts.count != 2 {
-            return nil
-        }
-        
-        let filename = parts[0].base
-        let ext = parts[1].base
-        guard let object = bundle.url(forResource: filename, withExtension: ext) else { return nil }
-
-        try? self.init(contentsOf: object)
+extension Date {
+    var iso8601: Date? {
+         return ISO8601DateFormatter().date(from: String(describing: self))
     }
 }

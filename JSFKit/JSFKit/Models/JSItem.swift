@@ -1,6 +1,6 @@
 //
-//  JSReaderError.swift
-//  JSONFeed
+//  JSItem.swift
+//  JSFKit
 //
 //  MIT License
 //
@@ -26,9 +26,37 @@
 
 import Foundation
 
-public enum JSReaderError: Error {
-    case invalidRequestString
-    case emptyResponseData
-    case serverError
-    case dataFormat
+public struct JSItem: Decodable {
+    public let id: String
+    public let url: URL?
+    public let external: URL?
+    public let title: String?
+    public let text: String?
+    public let html: String?
+    public let summary: String?
+    public let image: URL?
+    public let banner: URL?
+    public let published: Date
+    public let modified: Date?
+    public let author: JSAuthor?
+    public let tags: [String]?
+    public let attachments: [JSAttachment]?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case url
+        case external = "external_url"
+        case title
+        case text = "content_text"
+        case html = "content_html"
+        case summary
+        case image
+        case banner = "banner_image"
+        case published = "date_published"
+        case modified = "date_modified"
+        case author
+        case tags
+        case attachments
+    }
 }
+

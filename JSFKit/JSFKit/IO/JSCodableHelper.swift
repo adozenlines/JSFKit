@@ -1,6 +1,6 @@
 //
 //  JSCodableHelper.swift
-//  JSONFeed
+//  JSFKit
 //
 //  MIT License
 //

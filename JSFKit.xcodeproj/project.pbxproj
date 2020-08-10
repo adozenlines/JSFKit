@@ -13,8 +13,8 @@
 		FFB8818124DF40F6002AFCA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB8817F24DF40F6002AFCA2 /* Main.storyboard */; };
 		FFB8818324DF40F7002AFCA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB8818224DF40F7002AFCA2 /* Assets.xcassets */; };
 		FFB8818624DF40F7002AFCA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB8818424DF40F7002AFCA2 /* LaunchScreen.storyboard */; };
-		FFB8819124DF40F7002AFCA2 /* JSONFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8819024DF40F7002AFCA2 /* JSONFeedTests.swift */; };
-		FFB8819C24DF40F7002AFCA2 /* JSONFeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8819B24DF40F7002AFCA2 /* JSONFeedUITests.swift */; };
+		FFB8819124DF40F7002AFCA2 /* JSFKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8819024DF40F7002AFCA2 /* JSFKitTests.swift */; };
+		FFB8819C24DF40F7002AFCA2 /* JSFKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8819B24DF40F7002AFCA2 /* JSFKitUITests.swift */; };
 		FFB881AB24DF4161002AFCA2 /* JSAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB881AA24DF4161002AFCA2 /* JSAttachment.swift */; };
 		FFB881AD24DF4170002AFCA2 /* JSAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB881AC24DF4170002AFCA2 /* JSAuthor.swift */; };
 		FFB881AF24DF417F002AFCA2 /* JSHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB881AE24DF417F002AFCA2 /* JSHub.swift */; };
@@ -49,7 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FFB8817624DF40F6002AFCA2 /* JSONFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB8817624DF40F6002AFCA2 /* JSFKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSFKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB8817924DF40F6002AFCA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFB8817B24DF40F6002AFCA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FFB8817D24DF40F6002AFCA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,11 +57,11 @@
 		FFB8818224DF40F7002AFCA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFB8818524DF40F7002AFCA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFB8818724DF40F7002AFCA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FFB8818C24DF40F7002AFCA2 /* JSONFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFB8819024DF40F7002AFCA2 /* JSONFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFeedTests.swift; sourceTree = "<group>"; };
+		FFB8818C24DF40F7002AFCA2 /* JSFKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSFKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB8819024DF40F7002AFCA2 /* JSFKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSFKitTests.swift; sourceTree = "<group>"; };
 		FFB8819224DF40F7002AFCA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FFB8819724DF40F7002AFCA2 /* JSONFeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONFeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFB8819B24DF40F7002AFCA2 /* JSONFeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFeedUITests.swift; sourceTree = "<group>"; };
+		FFB8819724DF40F7002AFCA2 /* JSFKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSFKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB8819B24DF40F7002AFCA2 /* JSFKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSFKitUITests.swift; sourceTree = "<group>"; };
 		FFB8819D24DF40F7002AFCA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB881AA24DF4161002AFCA2 /* JSAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSAttachment.swift; sourceTree = "<group>"; };
 		FFB881AC24DF4170002AFCA2 /* JSAuthor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSAuthor.swift; sourceTree = "<group>"; };
@@ -113,9 +113,9 @@
 				FFB881CA24E03F3F002AFCA2 /* LICENSE */,
 				FFFDB41924E0A5890011D165 /* JSFKit.podspec */,
 				FFB881C924E03F3F002AFCA2 /* README.md */,
-				FFB8817824DF40F6002AFCA2 /* JSONFeed */,
-				FFB8818F24DF40F7002AFCA2 /* JSONFeedTests */,
-				FFB8819A24DF40F7002AFCA2 /* JSONFeedUITests */,
+				FFB8817824DF40F6002AFCA2 /* JSFKit */,
+				FFB8818F24DF40F7002AFCA2 /* JSFKitTests */,
+				FFB8819A24DF40F7002AFCA2 /* JSFKitUITests */,
 				FFB8817724DF40F6002AFCA2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,17 +123,17 @@
 		FFB8817724DF40F6002AFCA2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FFB8817624DF40F6002AFCA2 /* JSONFeed.app */,
-				FFB8818C24DF40F7002AFCA2 /* JSONFeedTests.xctest */,
-				FFB8819724DF40F7002AFCA2 /* JSONFeedUITests.xctest */,
+				FFB8817624DF40F6002AFCA2 /* JSFKit.app */,
+				FFB8818C24DF40F7002AFCA2 /* JSFKitTests.xctest */,
+				FFB8819724DF40F7002AFCA2 /* JSFKitUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FFB8817824DF40F6002AFCA2 /* JSONFeed */ = {
+		FFB8817824DF40F6002AFCA2 /* JSFKit */ = {
 			isa = PBXGroup;
 			children = (
-				FFB881A924DF410B002AFCA2 /* JSONFeed */,
+				FFB881A924DF410B002AFCA2 /* JSFKit */,
 				FFB8817924DF40F6002AFCA2 /* AppDelegate.swift */,
 				FFB8817B24DF40F6002AFCA2 /* SceneDelegate.swift */,
 				FFB8817D24DF40F6002AFCA2 /* ViewController.swift */,
@@ -142,29 +142,29 @@
 				FFB8818424DF40F7002AFCA2 /* LaunchScreen.storyboard */,
 				FFB8818724DF40F7002AFCA2 /* Info.plist */,
 			);
-			path = JSONFeed;
+			path = JSFKit;
 			sourceTree = "<group>";
 		};
-		FFB8818F24DF40F7002AFCA2 /* JSONFeedTests */ = {
+		FFB8818F24DF40F7002AFCA2 /* JSFKitTests */ = {
 			isa = PBXGroup;
 			children = (
 				FFB881C424DF53FE002AFCA2 /* streams */,
-				FFB8819024DF40F7002AFCA2 /* JSONFeedTests.swift */,
+				FFB8819024DF40F7002AFCA2 /* JSFKitTests.swift */,
 				FFB8819224DF40F7002AFCA2 /* Info.plist */,
 			);
-			path = JSONFeedTests;
+			path = JSFKitTests;
 			sourceTree = "<group>";
 		};
-		FFB8819A24DF40F7002AFCA2 /* JSONFeedUITests */ = {
+		FFB8819A24DF40F7002AFCA2 /* JSFKitUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FFB8819B24DF40F7002AFCA2 /* JSONFeedUITests.swift */,
+				FFB8819B24DF40F7002AFCA2 /* JSFKitUITests.swift */,
 				FFB8819D24DF40F7002AFCA2 /* Info.plist */,
 			);
-			path = JSONFeedUITests;
+			path = JSFKitUITests;
 			sourceTree = "<group>";
 		};
-		FFB881A924DF410B002AFCA2 /* JSONFeed */ = {
+		FFB881A924DF410B002AFCA2 /* JSFKit */ = {
 			isa = PBXGroup;
 			children = (
 				FFB881BD24DF429C002AFCA2 /* Extensions */,
@@ -172,7 +172,7 @@
 				FFB881B724DF421A002AFCA2 /* Types */,
 				FFB881B424DF41C6002AFCA2 /* Models */,
 			);
-			path = JSONFeed;
+			path = JSFKit;
 			sourceTree = "<group>";
 		};
 		FFB881B424DF41C6002AFCA2 /* Models */ = {
@@ -227,9 +227,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FFB8817524DF40F6002AFCA2 /* JSONFeed */ = {
+		FFB8817524DF40F6002AFCA2 /* JSFKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FFB881A024DF40F7002AFCA2 /* Build configuration list for PBXNativeTarget "JSONFeed" */;
+			buildConfigurationList = FFB881A024DF40F7002AFCA2 /* Build configuration list for PBXNativeTarget "JSFKit" */;
 			buildPhases = (
 				FFB8817224DF40F6002AFCA2 /* Sources */,
 				FFB8817324DF40F6002AFCA2 /* Frameworks */,
@@ -239,16 +239,16 @@
 			);
 			dependencies = (
 			);
-			name = JSONFeed;
+			name = JSFKit;
 			packageProductDependencies = (
 			);
 			productName = JSONFeed;
-			productReference = FFB8817624DF40F6002AFCA2 /* JSONFeed.app */;
+			productReference = FFB8817624DF40F6002AFCA2 /* JSFKit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FFB8818B24DF40F7002AFCA2 /* JSONFeedTests */ = {
+		FFB8818B24DF40F7002AFCA2 /* JSFKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FFB881A324DF40F7002AFCA2 /* Build configuration list for PBXNativeTarget "JSONFeedTests" */;
+			buildConfigurationList = FFB881A324DF40F7002AFCA2 /* Build configuration list for PBXNativeTarget "JSFKitTests" */;
 			buildPhases = (
 				FFB8818824DF40F7002AFCA2 /* Sources */,
 				FFB8818924DF40F7002AFCA2 /* Frameworks */,
@@ -259,14 +259,14 @@
 			dependencies = (
 				FFB8818E24DF40F7002AFCA2 /* PBXTargetDependency */,
 			);
-			name = JSONFeedTests;
+			name = JSFKitTests;
 			productName = JSONFeedTests;
-			productReference = FFB8818C24DF40F7002AFCA2 /* JSONFeedTests.xctest */;
+			productReference = FFB8818C24DF40F7002AFCA2 /* JSFKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FFB8819624DF40F7002AFCA2 /* JSONFeedUITests */ = {
+		FFB8819624DF40F7002AFCA2 /* JSFKitUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FFB881A624DF40F7002AFCA2 /* Build configuration list for PBXNativeTarget "JSONFeedUITests" */;
+			buildConfigurationList = FFB881A624DF40F7002AFCA2 /* Build configuration list for PBXNativeTarget "JSFKitUITests" */;
 			buildPhases = (
 				FFB8819324DF40F7002AFCA2 /* Sources */,
 				FFB8819424DF40F7002AFCA2 /* Frameworks */,
@@ -277,9 +277,9 @@
 			dependencies = (
 				FFB8819924DF40F7002AFCA2 /* PBXTargetDependency */,
 			);
-			name = JSONFeedUITests;
+			name = JSFKitUITests;
 			productName = JSONFeedUITests;
-			productReference = FFB8819724DF40F7002AFCA2 /* JSONFeedUITests.xctest */;
+			productReference = FFB8819724DF40F7002AFCA2 /* JSFKitUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -305,7 +305,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FFB8817124DF40F6002AFCA2 /* Build configuration list for PBXProject "JSONFeed" */;
+			buildConfigurationList = FFB8817124DF40F6002AFCA2 /* Build configuration list for PBXProject "JSFKit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -320,9 +320,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FFB8817524DF40F6002AFCA2 /* JSONFeed */,
-				FFB8818B24DF40F7002AFCA2 /* JSONFeedTests */,
-				FFB8819624DF40F7002AFCA2 /* JSONFeedUITests */,
+				FFB8817524DF40F6002AFCA2 /* JSFKit */,
+				FFB8818B24DF40F7002AFCA2 /* JSFKitTests */,
+				FFB8819624DF40F7002AFCA2 /* JSFKitUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -383,7 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB8819124DF40F7002AFCA2 /* JSONFeedTests.swift in Sources */,
+				FFB8819124DF40F7002AFCA2 /* JSFKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB8819C24DF40F7002AFCA2 /* JSONFeedUITests.swift in Sources */,
+				FFB8819C24DF40F7002AFCA2 /* JSFKitUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,12 +400,12 @@
 /* Begin PBXTargetDependency section */
 		FFB8818E24DF40F7002AFCA2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FFB8817524DF40F6002AFCA2 /* JSONFeed */;
+			target = FFB8817524DF40F6002AFCA2 /* JSFKit */;
 			targetProxy = FFB8818D24DF40F7002AFCA2 /* PBXContainerItemProxy */;
 		};
 		FFB8819924DF40F7002AFCA2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FFB8817524DF40F6002AFCA2 /* JSONFeed */;
+			target = FFB8817524DF40F6002AFCA2 /* JSFKit */;
 			targetProxy = FFB8819824DF40F7002AFCA2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -550,7 +550,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J38JV46HN7;
-				INFOPLIST_FILE = JSONFeed/Info.plist;
+				INFOPLIST_FILE = JSFKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -568,7 +568,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J38JV46HN7;
-				INFOPLIST_FILE = JSONFeed/Info.plist;
+				INFOPLIST_FILE = JSFKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,7 +598,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSONFeed.app/JSONFeed";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSFKit.app/JSFKit";
 			};
 			name = Debug;
 		};
@@ -620,7 +620,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSONFeed.app/JSONFeed";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSFKit.app/JSFKit";
 			};
 			name = Release;
 		};
@@ -667,7 +667,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FFB8817124DF40F6002AFCA2 /* Build configuration list for PBXProject "JSONFeed" */ = {
+		FFB8817124DF40F6002AFCA2 /* Build configuration list for PBXProject "JSFKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FFB8819E24DF40F7002AFCA2 /* Debug */,
@@ -676,7 +676,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FFB881A024DF40F7002AFCA2 /* Build configuration list for PBXNativeTarget "JSONFeed" */ = {
+		FFB881A024DF40F7002AFCA2 /* Build configuration list for PBXNativeTarget "JSFKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FFB881A124DF40F7002AFCA2 /* Debug */,
@@ -685,7 +685,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FFB881A324DF40F7002AFCA2 /* Build configuration list for PBXNativeTarget "JSONFeedTests" */ = {
+		FFB881A324DF40F7002AFCA2 /* Build configuration list for PBXNativeTarget "JSFKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FFB881A424DF40F7002AFCA2 /* Debug */,
@@ -694,7 +694,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FFB881A624DF40F7002AFCA2 /* Build configuration list for PBXNativeTarget "JSONFeedUITests" */ = {
+		FFB881A624DF40F7002AFCA2 /* Build configuration list for PBXNativeTarget "JSFKitUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FFB881A724DF40F7002AFCA2 /* Debug */,
