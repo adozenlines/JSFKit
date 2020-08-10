@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "JSFKit"
-  s.version          = "1.0.7"
+  s.version          = "1.0.8"
   s.summary          = "JSFKit is a swift JSON parser implementation of the RSS data reader"
   s.homepage         = "https://github.com/adozenlines/JSFKit"
   s.license          = 'MIT'
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.cocoapods_version = '>= 1.4.0'  
 
   s.subspec "Core" do |ss|
-    ss.source_files  = "JSFKit/JSFKit", "JSFKit/JSFKit/Extensions", "JSFKit/JSFKit/IO", "JSFKit/JSFKit/Models", "JSFKit/JSFKit/Types"
+    ss.source_files  = "Sources/JSFKit", "Sources/JSFKit/Extensions", "Sources/JSFKit/IO", "Sources/JSFKit/Models", "Sources/JSFKit/Types"
     ss.framework  = "Foundation"
   end
 
