@@ -38,7 +38,7 @@ let package = Package(
         .target(
             name: "JSONFeed",
             dependencies: [],
-            path: "JSONFeed/JSONFeed/"
+            path: "JSONFeed/JSONFeed/JSONFeed"
         )
     ]
 )
