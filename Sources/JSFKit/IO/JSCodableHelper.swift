@@ -36,10 +36,19 @@ public class JSCodableHelper {
 
     public static var dateformatter: DateFormatter?
 
-    public class func decode<T>(_ type: T.Type, from data: Data) -> (decodableObj: T?, error: Error?) where T : Decodable {
-        var returnedDecodable: T? = nil
-        var returnedError: Error? = nil
-
+    @available(*, deprecated, renamed: "decode(type:from:)")
+    open class func decode<T>(_ type: T.Type, from data: Data) throws -> (decodableObj: T?, error: Error?) where T : Decodable {
+        let result = try decode(type: type, from: data)
+        switch result {
+        case .success(let success):
+            return (success, nil)
+        case .failure(let failure):
+            return (nil, failure)
+        }
+    }
+    
+    open class func decode<T>(type: T.Type, from data: Data) throws -> Result<T, Error> where T : Decodable {
+        
         let decoder = JSONDecoder()
 
         if let df = self.dateformatter {
@@ -77,17 +86,25 @@ public class JSCodableHelper {
         }
 
         do {
-            returnedDecodable = try decoder.decode(type, from: data)
+            let returnedDecodable = try decoder.decode(type, from: data)
+            return .success(returnedDecodable)
         } catch {
-            returnedError = error
+            return .failure(error)
         }
-
-        return (returnedDecodable, returnedError)
     }
 
+    @available(*, deprecated, renamed: "encoded(value:prettyPrint:)")
     open class func encode<T>(_ value: T, prettyPrint: Bool = false) -> EncodeResult where T : Encodable {
-        var returnedData: Data?
-        var returnedError: Error? = nil
+        let result = encode(value: value, prettyPrint: prettyPrint)
+        switch result {
+        case .success(let success):
+            return (success, nil)
+        case .failure(let failure):
+            return (nil, failure)
+        }
+    }
+    
+    open class func encode<T>(value: T, prettyPrint: Bool = false) -> Result<Data, Error> where T : Encodable {
 
         let encoder = JSONEncoder()
         if prettyPrint {
@@ -102,11 +119,10 @@ public class JSCodableHelper {
         encoder.dateEncodingStrategy = .formatted(formatter)
 
         do {
-            returnedData = try encoder.encode(value)
+            let returnedData = try encoder.encode(value)
+            return .success(returnedData)
         } catch {
-            returnedError = error
+            return .failure(error)
         }
-
-        return (returnedData, returnedError)
     }
 }

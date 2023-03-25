@@ -30,6 +30,7 @@ protocol JSReaderProtocol {
     var session: URLSession { get }
     var url: URL? { get }
     func read(completion: @escaping (JSFeed?, Error?) -> Void)
+    func read() async throws -> JSFeed?
 }
 
 
@@ -42,27 +43,36 @@ public struct JSReader: JSReaderProtocol {
         self.session = session
     }
     
+    public func read() async throws -> JSFeed? {
+        guard let url = url else { throw JSError.invalidURL }
+        let (data, response) = try await session.data(from: url)
+        guard let response = response as? HTTPURLResponse,
+              (200..<400).contains(response.statusCode) else {
+            throw JSReaderError.serverError
+        }
+        guard let mimeType = response.mimeType, mimeType.contains(JSMimeTypes.appFeedJson.value) ||
+            mimeType.contains(JSMimeTypes.appJson.value) else {
+                 throw JSReaderError.dataFormat
+        }
+        let result = try? JSCodableHelper.decode(type: JSFeed.self, from: data)
+        switch result {
+        case .success(let success)?:
+            return success
+        case .failure(let failure)?:
+            throw failure
+        case .none:
+            return nil
+        }
+    }
+    
     public func read(completion: @escaping (JSFeed?, Error?) -> Void) {
-        guard let url = url else { completion(nil, JSError.invalidURL); return }
-        let operation = session.dataTask(with: url) { (data, response, error) in
-            guard let response = response as? HTTPURLResponse,
-                (200..<400).contains(response.statusCode) else {
-                    completion(nil, JSReaderError.serverError)
-                return
-            }
-            guard let mimeType = response.mimeType, mimeType.contains(JSMimeTypes.appFeedJson.value) ||
-                mimeType.contains(JSMimeTypes.appJson.value) else {
-                    completion(nil, JSReaderError.dataFormat)
-                return
-            }
-            if error != nil {
+        Task {
+            do {
+                let result = try await read()
+                completion(result, nil)
+            } catch {
                 completion(nil, error)
-            } else {
-                guard let data = data else { completion(nil, JSReaderError.emptyResponseData); return }
-                let model = JSCodableHelper.decode(JSFeed.self, from: data)
-                completion(model.decodableObj, model.error)
             }
         }
-        operation.resume()
     }
 }
