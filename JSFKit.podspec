@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "JSFKit"
-  s.version          = "1.0.13"
+  s.version          = "2303.24.0"
   s.summary          = "JSFKit is a swift JSON parser implementation of the RSS data reader"
   s.homepage         = "https://github.com/adozenlines/JSFKit"
   s.license          = 'MIT'
